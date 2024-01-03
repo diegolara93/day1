@@ -9,6 +9,8 @@ import (
 )
 
 var re = regexp.MustCompile("[0-9]")
+var words = []string{"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"}
+var pattern = strings.Join(words, "|")
 
 func addCount(text []string) int {
 	if len(text) > 1 {
